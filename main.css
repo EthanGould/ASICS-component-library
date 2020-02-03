@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+a {
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  margin: 0;
+}
+
+.header {
+  padding: 20px;
+  width: 100%;
+  font-family: sans-serif;
+  color: #001e63;
+  background: #fff;
+}
+
+.sidebar {
+  padding: 40px 0;
+  flex-basis: 300px;
+  background: #001e63;
+  color: #fff;
+  font-family: sans-serif;
+}
+.sidebar__header {
+  font-size: 20px;
+  margin: 10px 25px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid #fff;
+}
+.sidebar__link {
+  margin: 0 25px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: background 0.2s;
+  color: #fff;
+  display: block;
+}
+.sidebar__link:hover:not(.sidebar__link--active) {
+  background: #002d96;
+}
+.sidebar__link--active {
+  background: #f8485e;
+}
+
+.component {
+  font-family: sans-serif;
+  flex-grow: 1;
+  padding: 40px 20px;
+}
+.component__sample {
+  margin-bottom: 40px;
+}
+.component__heading {
+  margin: 0;
+  font-size: 32px;
+  color: #001e63;
+}
+.component__heading--sub {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.component__variants {
+  width: 100%;
+  padding: 20px 0 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #001e63;
+}
+.component__variant {
+  display: inline-block;
+  margin-right: 20px;
+}
+.component__variant a {
+  color: #001e63;
+}
+.component__variant a:hover {
+  color: #002d96;
+}
+.component__item--inline {
+  display: inline-block;
+  margin-right: 10px;
+}
+.component__code {
+  display: inline-block;
+  border: 1px solid #001e63;
+  border-left: 10px solid #001e63;
+  margin-top: 30px;
+  padding: 15px;
+}
+
+.button {
+  padding: 10px 30px;
+  min-width: 100px;
+  color: #001e63;
+  background-color: #02c3e6;
+  border-color: #02c3e6;
+  text-align: center;
+  transition: background 0.2s, border 0.2s, opacity 0.2s;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+.button:hover:not(:disabled), .button:focus:not(:disabled) {
+  color: #001e63;
+  background-color: #37dffd;
+  border-color: #37dffd;
+}
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.button--secondary {
+  color: #001e63;
+  background-color: #e3e5e5;
+  border-color: #e3e5e5;
+  transition: background 0.2s, opacity 0.2s;
+}
+.button--secondary:hover:not(:disabled), .button--secondary:focus:not(:disabled) {
+  color: #001e63;
+  background-color: #f0f1f1;
+  border-color: #f0f1f1;
+}
+.button--tertiary {
+  color: #001e63;
+  background-color: #d1de01;
+  border-color: #d1de01;
+  transition: background 0.2s, opacity 0.2s;
+}
+.button--tertiary:hover:not(:disabled), .button--tertiary:focus:not(:disabled) {
+  color: #001e63;
+  background-color: #e9f701;
+  border-color: #e9f701;
+}
+
+/*# sourceMappingURL=main.css.map */

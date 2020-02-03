@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Component library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="content">
+        <!-- <header class="header">Component Library</header> -->
+        <aside class="sidebar">
+            <nav>
+                <div class="sidebar__header">Components</div>
+                <ul class="sidebar__list">
+                    <li><a href="#" class="sidebar__link">Form Elements</a></li>
+                    <li><a href="#" class="sidebar__link">Navigation</a></li>
+                    <li><a href="#" class="sidebar__link sidebar__link--active">Buttons</a></li>
+                    <li><a href="#" class="sidebar__link">Lists</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="component">
+            <h1 class="component__heading">Buttons</h1>
+
+            <ul class="component__variants">
+                <li class="component__variant"><a href="#">Standard</a></li>
+                <li class="component__variant"><a href="#">Disabled</a></li>
+            </ul>
+            <h2 class="component__heading component__heading--sub">Standard</h2>
+            <article class="component__sample">
+                <ul class="component__example">
+                    <li class="component__item component__item--inline"><button class="button">Primary</button></li>
+                    <li class="component__item component__item--inline"><button class="button button--secondary">Secondary</button></li>
+                    <li class="component__item component__item--inline"><button class="button button--tertiary">Tertiary</button></li>
+                </ul>
+                <div class="component__code">
+                    <pre style="color:#000000;background:#ffffff;"><span style="color:#808030; ">&lt;</span>button class<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">button</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Primary<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>button<span style="color:#808030; ">&gt;</span>
+<span style="color:#808030; ">&lt;</span>button class<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">button button--secondary</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Secondary<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>button<span style="color:#808030; ">&gt;</span>
+<span style="color:#808030; ">&lt;</span>button class<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">button button--tertiary</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Tertiary<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>button<span style="color:#808030; ">&gt;</span>
+</pre>
+                </div>
+            </article>
+            <h2 class="component__heading component__heading--sub">Disabled</h2>
+            <article class="component__sample">
+                <ul class="component__example">
+                    <li class="component__item component__item--inline"><button disabled class="button">Primary</button></li>
+                    <li class="component__item component__item--inline"><button disabled class="button button--secondary">Secondary</button></li>
+                    <li class="component__item component__item--inline"><button disabled class="button button--tertiary">Tertiary</button></li>
+                </ul>
+                <div class="component__code">
+
+<pre style="color:#000000;background:#ffffff;"><span style="color:#808030; ">&lt;</span>button disabled class<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">button</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Primary<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>button<span style="color:#808030; ">&gt;</span>
+<span style="color:#808030; ">&lt;</span>button disabled class<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">button button--secondary</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Secondary<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>button<span style="color:#808030; ">&gt;</span>
+<span style="color:#808030; ">&lt;</span>button disabled class<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">button button--tertiary</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Tertiary<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>button<span style="color:#808030; ">&gt;</span>
+</pre>
+
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+</html>

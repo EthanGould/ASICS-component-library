@@ -1,0 +1,37 @@
+// ASICS Colors
+$grey-dark: #6a6a6a;
+$grey: #e3e5e5;
+// $red: #ec0041;
+// $red-2: #c30036;
+$white: #fff;
+$tangerine: #f8485e;
+$light-green: #d1de01;
+
+$brand-color-light: #02c3e6;
+$brand-color-dark: #001e63;
+$brand-color-highlight: #f8485e;
+$brand-color-tertiary: #d1de01;
+
+// Primary
+$btn-color: $brand-color-dark; // text
+$btn-bg: $brand-color-light;
+$btn-border-color: $brand-color-light;
+$btn-hover-color: $brand-color-dark; // text
+$btn-hover-bg: lighten($brand-color-light, 15);
+$btn-hover-border-color: lighten($brand-color-light, 15);
+
+// Secondary
+$btn2-color: $brand-color-dark; // text
+$btn2-bg: $grey;
+$btn2-border-color: $grey;
+$btn2-hover-color: $brand-color-dark; // text
+$btn2-hover-bg: lighten($grey, 5);
+$btn2-hover-border-color: lighten($grey, 5);
+
+// Tertiary
+$btn3-color: $brand-color-dark; // text
+$btn3-bg: $brand-color-tertiary;
+$btn3-border-color: $brand-color-tertiary;
+$btn3-hover-color: $brand-color-dark; // text
+$btn3-hover-bg: lighten($brand-color-tertiary, 5);
+$btn3-hover-border-color: lighten($brand-color-tertiary, 5);

@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+a {
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+pre {
+    margin: 0;
+}
+
+.header {
+    padding: 20px;
+    width: 100%;
+    font-family: sans-serif;
+    color: $brand-color-dark;
+    background: $white;
+}
+
+.sidebar {
+    padding: 40px 0;
+    flex-basis: 300px;
+    background: $brand-color-dark;
+    color: $white;
+    font-family: sans-serif;
+
+    &__header {
+        font-size: 20px;
+        margin: 10px 25px;
+        padding: 0 0 10px;
+        border-bottom: 1px solid $white;
+    }
+
+    &__link {
+        margin: 0 25px;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        transition: background .2s;
+        color: $white;
+        display: block;
+        
+        &:hover:not(&--active) {
+            background: lighten($brand-color-dark, 10);
+        }
+
+        &--active {
+            background: $brand-color-highlight;
+        }
+    }
+}
+
+.component {
+    font-family: sans-serif;
+    flex-grow: 1;
+    padding: 40px 20px;
+
+    &__sample {
+        margin-bottom: 40px;
+    }
+
+    &__heading {
+        margin: 0;
+        font-size: 32px;
+        color: $brand-color-dark;
+
+        &--sub {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__variants {
+        width: 100%;
+        padding: 20px 0 10px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid $brand-color-dark;
+    }
+
+    &__variant {
+        display: inline-block;
+        margin-right: 20px;
+
+        a {
+            color: $brand-color-dark;
+
+            &:hover {
+                color: lighten($brand-color-dark, 10);
+            }
+        }
+    }
+
+    &__item {
+        &--inline {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+
+    &__code {
+        display: inline-block;
+        border: 1px solid $brand-color-dark;
+        border-left: 10px solid $brand-color-dark;
+        margin-top: 30px;
+        padding: 15px;
+    }
+}
