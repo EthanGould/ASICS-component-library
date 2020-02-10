@@ -64,6 +64,7 @@ pre {
   font-family: sans-serif;
   flex-grow: 1;
   padding: 40px 20px;
+  display: none;
 }
 .component__sample {
   margin-bottom: 40px;
@@ -93,15 +94,47 @@ pre {
 .component__variant a:hover {
   color: #002d96;
 }
+.component__item {
+  margin: 0 0 20px 0;
+}
 .component__item--inline {
   display: inline-block;
-  margin-right: 10px;
+  margin: 0 10px 0 0;
+}
+.component__color {
+  height: 150px;
+  position: relative;
+}
+.component__hex {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-shadow: 0 0 2px black;
+}
+.component__text-sample {
+  position: absolute;
+  bottom: 15px;
+  right: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+.component__text-sample:nth-child(3) {
+  bottom: 50px;
+}
+.component__text-sample--primary {
+  color: #001e63;
+}
+.component__text-sample--secondary {
+  color: #02c3e6;
 }
 .component__code {
   display: inline-block;
   border: 1px solid #001e63;
   border-left: 10px solid #001e63;
-  margin-top: 30px;
+  margin: 20px 0 50px;
   padding: 15px;
 }
 
@@ -117,12 +150,21 @@ pre {
   cursor: pointer;
   font-weight: 500;
 }
-.button:hover:not(:disabled), .button:focus:not(:disabled) {
+.button--square {
+  display: inline-block;
+  min-width: 0;
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  line-height: 3rem;
+  font-weight: 900;
+}
+.button:hover:not([disabled]), .button:focus:not([disabled]) {
   color: #001e63;
   background-color: #37dffd;
   border-color: #37dffd;
 }
-.button:disabled {
+.button[disabled] {
   opacity: 0.7;
   cursor: not-allowed;
 }
@@ -132,7 +174,7 @@ pre {
   border-color: #e3e5e5;
   transition: background 0.2s, opacity 0.2s;
 }
-.button--secondary:hover:not(:disabled), .button--secondary:focus:not(:disabled) {
+.button--secondary:hover:not([disabled]), .button--secondary:focus:not([disabled]) {
   color: #001e63;
   background-color: #f0f1f1;
   border-color: #f0f1f1;
@@ -143,7 +185,7 @@ pre {
   border-color: #d1de01;
   transition: background 0.2s, opacity 0.2s;
 }
-.button--tertiary:hover:not(:disabled), .button--tertiary:focus:not(:disabled) {
+.button--tertiary:hover:not([disabled]), .button--tertiary:focus:not([disabled]) {
   color: #001e63;
   background-color: #e9f701;
   border-color: #e9f701;

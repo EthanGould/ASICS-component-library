@@ -6,7 +6,7 @@
     <title>Component library</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <link href="https://www.asics.com/on/demandware.static/Sites-asics-eu-Site/-/default/dwa60f42a0/images/favicon-asics.png" rel="shortcut icon" />
 </head>
 <body>
     <div class="content">
@@ -15,14 +15,48 @@
             <nav>
                 <div class="sidebar__header">Components</div>
                 <ul class="sidebar__list">
-                    <li><a href="#" class="sidebar__link">Form Elements</a></li>
-                    <li><a href="#" class="sidebar__link">Navigation</a></li>
-                    <li><a href="#" class="sidebar__link sidebar__link--active">Buttons</a></li>
-                    <li><a href="#" class="sidebar__link">Lists</a></li>
+                    <li><a href="#colors" class="sidebar__link js-component-link">Colors</a></li>
+                    <li><a href="#forms" class="sidebar__link js-component-link">Form Elements</a></li>
+                    <li><a href="#nav" class="sidebar__link js-component-link">Navigation</a></li>
+                    <li><a href="#buttons" class="sidebar__link js-component-link">Buttons</a></li>
+                    <li><a href="#lists" class="sidebar__link js-component-link">Lists</a></li>
                 </ul>
             </nav>
         </aside>
-        <section class="component">
+        <section class="component" data-component="colors">
+            <h1 class="component__heading">Colors</h1>
+            <ul class="component__variants">
+                <li class="component__variant"><a href="#">Brand</a></li>
+                <li class="component__variant"><a href="#">Functional</a></li>
+            </ul>
+            <h2 class="component__heading component__heading--sub">Brand</h2>
+
+            <article class="component__sample">
+                <ul class="component__example">
+                    <li class="component__item">
+                        <div class="component__color" style="background-color: #001e63;">
+                            <span class="component__hex">HEX: #001e63;</span>
+                            <span class="component__text-sample">Anima sana in corpore sano</span>
+                            <span class="component__text-sample component__text-sample--secondary">Anima sana in corpore sano</span>
+                        </div>
+                    </li>
+                    <li class="component__item">
+                        <div class="component__color" style="background-color: #02c3e6;">
+                            <span class="component__hex">HEX: #02c3e6;</span>
+                            <span class="component__text-sample component__text-sample--primary">Anima sana in corpore sano</span>
+                        </div>
+                    </li>
+                    <li class="component__item">
+                        <div class="component__color" style="background-color: #D0DF00;">
+                            <span class="component__hex">HEX: #D0DF00;</span>
+                            <span class="component__text-sample component__text-sample--primary">Anima sana in corpore sano</span>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+        <section class="component" data-component="buttons">
             <h1 class="component__heading">Buttons</h1>
 
             <ul class="component__variants">
@@ -42,6 +76,18 @@
 <span style="color:#808030; ">&lt;</span>button class<span style="color:#808030; ">=</span><span style="color:#800000; ">"</span><span style="color:#0000e6; ">button button--tertiary</span><span style="color:#800000; ">"</span><span style="color:#808030; ">&gt;</span>Tertiary<span style="color:#808030; ">&lt;</span><span style="color:#808030; ">/</span>button<span style="color:#808030; ">&gt;</span>
 </pre>
                 </div>
+                <ul class="component__example">
+                    <li class="component__item component__item--inline"><a class="button button--square">&rang;</a></li>
+                    <li class="component__item component__item--inline"><a class="button button--square button--secondary">&rang;</a></li>
+                    <li class="component__item component__item--inline"><a class="button button--square button--tertiary">&rang;</a></li>
+                </ul>
+                <div class="component__code">
+                <pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">&lt;a</span> <span style="color: #FF0000">class=</span><span style="color: #0000FF">&quot;button button--square&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>&amp;rang;<span style="color: #000080; font-weight: bold">&lt;/a&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;a</span> <span style="color: #FF0000">class=</span><span style="color: #0000FF">&quot;button button--square button--secondary&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>&amp;rang;<span style="color: #000080; font-weight: bold">&lt;/a&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;a</span> <span style="color: #FF0000">class=</span><span style="color: #0000FF">&quot;button button--square button--tertiary&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>&amp;rang;<span style="color: #000080; font-weight: bold">&lt;/a&gt;</span>
+</pre>
+
+                </div>
             </article>
             <h2 class="component__heading component__heading--sub">Disabled</h2>
             <article class="component__sample">
@@ -59,7 +105,22 @@
 
                 </div>
             </article>
+            <article class="component__sample">
+                <ul class="component__example">
+                    <li class="component__item component__item--inline"><a disabled class="button button--square">&rang;</a></li>
+                    <li class="component__item component__item--inline"><a disabled class="button button--square button--secondary">&rang;</a></li>
+                    <li class="component__item component__item--inline"><a disabled class="button button--square button--tertiary">&rang;</a></li>
+                </ul>
+                <div class="component__code">
+                <pre style="margin: 0; line-height: 125%"><span style="color: #000080; font-weight: bold">&lt;a</span> <span style="color: #FF0000">disabled class=</span><span style="color: #0000FF">&quot;button button--square&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>&amp;rang;<span style="color: #000080; font-weight: bold">&lt;/a&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;a</span> <span style="color: #FF0000">disabled class=</span><span style="color: #0000FF">&quot;button button--square button--secondary&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>&amp;rang;<span style="color: #000080; font-weight: bold">&lt;/a&gt;</span>
+<span style="color: #000080; font-weight: bold">&lt;a</span> <span style="color: #FF0000">disabled class=</span><span style="color: #0000FF">&quot;button button--square button--tertiary&quot;</span><span style="color: #000080; font-weight: bold">&gt;</span>&amp;rang;<span style="color: #000080; font-weight: bold">&lt;/a&gt;</span>
+</pre>
+
+                </div>
+            </article>
         </section>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>

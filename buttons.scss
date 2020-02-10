@@ -10,15 +10,25 @@
     cursor: pointer;
     font-weight: 500;
 
-    &:hover:not(:disabled),
-    &:focus:not(:disabled) {
+    &--square {
+        display: inline-block;
+        min-width: 0;
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        line-height: 3rem;
+        font-weight: 900;
+    }
+
+    &:hover:not([disabled]),
+    &:focus:not([disabled]) {
         color: $btn-hover-color;
         background-color: $btn-hover-bg;
         border-color: $btn-hover-border-color;
 
     }
 
-    &:disabled {
+    &[disabled] {
         opacity: 0.7;
         cursor: not-allowed;
     }
@@ -29,8 +39,8 @@
         border-color: $btn2-border-color;
         transition: background 0.2s, opacity 0.2s;
 
-        &:hover:not(:disabled),
-        &:focus:not(:disabled) {
+        &:hover:not([disabled]),
+        &:focus:not([disabled]) {
             color: $btn2-hover-color;
             background-color: $btn2-hover-bg;
             border-color: $btn2-hover-border-color;
@@ -44,8 +54,8 @@
         border-color: $btn3-border-color;
         transition: background 0.2s, opacity 0.2s;
 
-        &:hover:not(:disabled),
-        &:focus:not(:disabled) {
+        &:hover:not([disabled]),
+        &:focus:not([disabled]) {
             color: $btn3-hover-color;
             background-color: $btn3-hover-bg;
             border-color: $btn3-hover-border-color;
